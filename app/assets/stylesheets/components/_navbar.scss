@@ -1,0 +1,40 @@
+
+
+
+
+
+nav ul li {
+
+  position: relative;
+}
+
+nav ul li a{
+  display: block;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: rgb(48,204,219);
+  padding:10px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li ul li {
+  width: 80px;
+  display:block;
+
+}
+
+nav ul li ul li {
+  padding: 8px 14px;
+}
+
+nav ul li ul li:hover {
+  background-color: rgb(181,99,164);
+
+}
+
+nav ul li:hover ul {
+  display: block;
+}
