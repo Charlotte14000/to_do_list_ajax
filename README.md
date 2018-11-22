@@ -1,24 +1,37 @@
-# README
+# 🙊The Gossip Project🙊
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+OXOXOXOXOXOXOXOXO![alt text](https://media.giphy.com/media/9wZMlnM0R06l2/giphy.gif)OXOXOXOXOXOXOXOXO
 
-Things you may want to cover:
+## 💾Présentation de l'application💾
 
-* Ruby version
+Voici le lien de l'application en prod sur heroku "https://todolist-ajax.herokuapp.com/email"
 
-* System dependencies
+## 💽Comment utiliser le programme ? 💽
 
-* Configuration
+Cloner le repo, puis entre les commandes suivantes pour préparer le programme
 
-* Database creation
+```
+cd to_do_list_ajax
+bundle install
+rails db:migrate
+rails db:seed
+rails server
+```
+aller sur http://localhost:3000/email/index
 
-* Database initialization
+## 🎉Contenu de l'application🎉
 
-* How to run the test suite
+La colonne de la liste devra afficher juste l'objet de tous les emails.
 
-* Services (job queues, cache servers, search engines, etc.)
+Quand on clique sur un email dans la colonne liste, la colonne contenu devra afficher :
+* L'objet de l'email, en gros
+** Le corps de l'email, en taille normale
+* un lien pour supprimer l'email
 
-* Deployment instructions
+## 🌈Team Caen🌈
 
-* ...
+* Rebecca Bossé
+* Rauana Roupsard
+* Charlotte Vaudour
+
+![alt text](https://media.shoko.fr/article-3574479-head-f4/gossip-girl.jpg)
