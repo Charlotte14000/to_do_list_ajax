@@ -1,0 +1,17 @@
+
+<h1>LISTE EMAILS</h1>
+<table class= "table table-light">
+<tr>
+     <th>Object</th>
+     <th>Body</th>
+</tr>
+<% @email.each do |t| %>
+
+<tr id='email_<%=t.id%>'>
+  <td class="email_hide"><button class="btn btn-info" onclick="revele(<%= t.id %>)"><%= t.object %></button></td>
+  <td> <%= t.body %> </td>
+  <td><button class="btn btn-danger">
+<%= link_to "Click pour détruire", t, :remote=> true, :method =>:delete %></button></td>
+  <%end%>
+</tr>
+</table>

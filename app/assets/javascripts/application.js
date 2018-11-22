@@ -23,5 +23,21 @@ $(document).ready(function(){
   $('.container ul:first > li').click(function(){
     $('.container ul:first > li').removeClass('active').next().hide();
     $(this).addClass('active').next().show();
-  });
+
 });
+$('.email_hide').siblings().fadeOut(0);
+  $('#img_avatar').hover(
+    function() {
+      $('.list-nav').stop().slideDown(200);
+    },
+    function() {
+      $('.list-nav').stop().delay(4000).slideUp(200);
+    })
+
+});
+function revele (id) {
+   var email_id = id
+   $('#email_' + email_id).children().fadeIn(500);
+   $('#email_' + email_id).children().first().children().css("fontSize", 25);
+   $('#email_' + email_id).children().first().children().attr('class', "btn btn-primary");
+ }
